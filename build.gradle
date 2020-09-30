@@ -20,6 +20,16 @@ dependencies {
 	testImplementation 'org.junit.platform:junit-platform-launcher:1.5.2'
 }
 
+jar {
+
+	manifest {
+	
+		attributes(
+		
+			'Main-Class': 'com.kero.test.opencascade.Main'
+		)
+	}
+}
 test {
 
 	useJUnitPlatform()
