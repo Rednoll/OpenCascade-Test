@@ -13,16 +13,16 @@ public class Main {
 		int arraySize = readArraySize();
 		
 		int[] array = createFilledArray(arraySize);
-		System.out.println("Ñîçäàí ìàññèâ("+arraySize+"): "+Arrays.toString(array));
+		System.out.println("Ð¡Ð¾Ð·Ð´Ð°Ð½ Ð¼Ð°ÑÑÐ¸Ð²("+arraySize+"): "+Arrays.toString(array));
 		
 		array = removeRandomElement(array);
-		System.out.println("Óäàëåíèå ñëó÷àéíîãî ýëåìåíòà, ïîëó÷åííûé ìàññèâ: "+Arrays.toString(array));
+		System.out.println("Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ð¾Ð³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°, Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: "+Arrays.toString(array));
 		
 		array = shuffleArray(array, array.length);
-		System.out.println("Ïåðåìåøèâàíèå ìàññèâà, ïîëó÷åííûé ìàññèâ: "+Arrays.toString(array));
+		System.out.println("ÐŸÐµÑ€ÐµÐ¼ÐµÑˆÐ¸Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°, Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: "+Arrays.toString(array));
 	
 		int removedElement = findRemovedElement(array);
-		System.out.println("Óäàëåííûé ýëåìåíò: "+removedElement);
+		System.out.println("Ð£Ð´Ð°Ð»ÐµÐ½Ð½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚: "+removedElement);
 	}
 	
 	public static int findRemovedElement(int[] array) {
@@ -96,7 +96,7 @@ public class Main {
 		
 		while(true) {
 			
-			System.out.println("Ââåäèòå ðàçìåð ìàññèâà");
+			System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°");
 			
 			String line = scanner.nextLine();
 		
@@ -106,7 +106,7 @@ public class Main {
 			}
 			catch(NumberFormatException e) {
 				
-				System.out.println("Ðàçìåð ìàññèâà íå ìîæåò áûòü: "+line+"!");
+				System.out.println("Ð Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ: "+line+"!");
 				continue;
 			}
 			
@@ -117,7 +117,7 @@ public class Main {
 			}
 			else {
 				
-				System.out.println("Ðàçìåð ìàññèâà äîëæåí áûòü >= 10!");	
+				System.out.println("Ð Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ >= 10!");	
 			}
 		}
 	}
